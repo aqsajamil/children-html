@@ -1,0 +1,258 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  .headtag h1{
+    position: absolute;
+    left: 50%;
+    color: red,green,blue;
+    
+    transform: translate(-30%,-250%);
+  }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/6.jpg");
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  nav{
+    background: rgb(87, 6, 6);
+    height: 4rem;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 25%;
+    list-style: none;
+   
+}
+nav ul li{
+    margin: 0 2rem;
+    font-size: 1.5rem;
+}
+nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+}
+a.active,a:hover{
+    background: rgb(223, 28, 28);
+}
+.menubar{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+   display: none; 
+}
+#box{
+    display: none;
+}
+.main img{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  left: 10%;
+}
+.main blockquote{
+  text-align: center;
+}
+/*page1*/
+.head2{
+  text-align: center;
+}
+table, td, th {
+  border: 2px solid black;
+}
+
+table {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 5%;
+}
+/*************page2**************/
+form{
+  padding-bottom: 10%;
+}
+#feedback-form {
+  width: 280px;
+  margin: 5% auto;
+  background-color: #fcfcfc;
+  padding: 20px 50px 40px;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  font-family: sans-serif;
+}
+
+#feedback-form * {
+    box-sizing: border-box;
+}
+
+#feedback-form h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#feedback-form input {
+  margin-bottom: 15px;
+}
+
+#feedback-form input[type=text] {
+  display: block;
+  height: 32px;
+  padding: 6px 16px;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+#feedback-form label {
+  color: #777;
+  font-size: 0.8em;
+}
+
+#feedback-form input[type=checkbox] {
+  float: left;
+}
+
+#feedback-form input:not(:checked) + #feedback-phone {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#feedback-form #feedback-phone {
+  transition: .3s;
+}
+
+#feedback-form button[type=submit] {
+  display: block;
+  margin: 20px auto 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: #eee;
+  font-weight: 700;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  
+  background: #207cca; /* Old browsers */
+  background: -moz-linear-gradient(left, #207cca 0%, #9f58a3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #365b7c 0%,#ac2a19 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #7abffc 0%,#6d110b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#9f58a3',GradientType=1 ); /* IE6-9 */
+}
+/******page 2 END******/
+
+
+
+/*********Page 3 *********/
+.head3{
+  text-align: center;
+}
+div.gallery {
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 0 15px #00000033;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery .img {
+  width: 100%;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/******page 3 END *********/
+@media (max-width: 952px){
+    body{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+    .menubar{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(27%);
+        left: -100%;
+        transition: all .5s;
+    }
+    nav ul li{
+        transform: translateX(5%);
+        margin: 1rem 0;
+        padding: 1.5rem;
+        position: relative;
+        top: -25%;
+
+    }
+    a.active,a:hover{
+        background: rgb(223, 28, 28);
+    }
+    #box:checked~ul{
+        left: 0;
+    }
+    
+    
+
+}
+  
